@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+  <!-- 元数据 -->
+  <meta charset="utf-8">
+  <link rel="icon" href="https://q.qlogo.cn/headimg_dl?dst_uin=3276839942&spec=1">
+  
+  <title>解决局域网我的小电视导致设备管理器不断刷新 | XiaozhiSans&#39; blog</title>
+  
+  <meta name="author" content="XiaozhiSans" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="format-detection" content="telphone=no, email=no" />
+  
+    <meta name="keywords" content="局域网设备, 我的小电视, 设备管理器" />
+  
+  <meta name="description" content="起因今天打开设备管理器时发现一个叫做我的小电视的软件设备在不断刷新设备管理器">
+<meta property="og:type" content="article">
+<meta property="og:title" content="解决局域网我的小电视导致设备管理器不断刷新">
+<meta property="og:url" content="https://xiaozhisans.github.io/2024/04/30/%E8%A7%A3%E5%86%B3%E5%B1%80%E5%9F%9F%E7%BD%91%E6%88%91%E7%9A%84%E5%B0%8F%E7%94%B5%E8%A7%86%E5%AF%BC%E8%87%B4%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86%E5%99%A8%E4%B8%8D%E6%96%AD%E5%88%B7%E6%96%B0/">
+<meta property="og:site_name" content="XiaozhiSans&#39; blog">
+<meta property="og:description" content="起因今天打开设备管理器时发现一个叫做我的小电视的软件设备在不断刷新设备管理器">
+<meta property="og:locale">
+<meta property="og:image" content="https://q.qlogo.cn/headimg_dl?dst_uin=3276839942&spec=1">
+<meta property="article:published_time" content="2024-04-30T07:11:16.000Z">
+<meta property="article:modified_time" content="2024-08-09T13:37:26.531Z">
+<meta property="article:author" content="XiaozhiSans">
+<meta property="article:tag" content="我的小电视">
+<meta property="article:tag" content="设备管理器">
+<meta property="article:tag" content="局域网设备">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://q.qlogo.cn/headimg_dl?dst_uin=3276839942&spec=1">
+  
+  <!-- 站点验证相关 -->
+  
+    
+    
+    
+      <meta name="msvalidate.01" content="596A6714E6149ACBAFEC59929BDCACEC" />
+    
+  
+  <!-- 样式表文件 -->
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" media="all"></script>
+  
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/js/kr-dark.min.js"></script>
+  
+  
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/aplayer@1.10.1/dist/APlayer.min.css"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
+  
+  <!-- 不得不预先加载的一些JS文件 -->
+  <script src="/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
+  
+    <script src="/vendors/qrcode_js@1.0.0/qrcode.min.js"></script>
+  
+  
+  <style>
+    
+      .kratos-cover.kratos-cover-2 {
+        background-image: url('images/background.jpg');
+      }
+    
+    
+  </style>
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+    <body class="custom-background">
+        <div id="kratos-wrapper">
+    <div id="kratos-page">
+        <div id="kratos-header">
+            <header id="kratos-desktop-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="nav-header">
+                        <nav id="kratos-menu-wrap">
+                            <ul id="kratos-primary-menu" class="sf-menu">
+                                
+                                    
+                                        <li>
+                                            
+                                                <a href="/">
+                                            
+                                                
+                                                    <i class="fa fa-home"></i>
+                                                
+                                                主页
+                                            </a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="/timeline/">
+                                            
+                                                
+                                                    <i class="fa fa-clock-o"></i>
+                                                
+                                                时间线
+                                            </a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="/friends/">
+                                            
+                                                
+                                                    <i class="fa fa-external-link"></i>
+                                                
+                                                友链
+                                            </a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a>
+                                            
+                                                
+                                                    <i class="fa fa-link"></i>
+                                                
+                                                链接
+                                            </a>
+                                            
+                                                <ul class="sub-menu">
+                                                    
+                                                        <li>
+                                                            <a href="https://xiaozhisans.github.io/XiaozhiSans">
+                                                                
+                                                                    <i class="fa fa-user-circle"></i>
+                                                                
+                                                                作者博客
+                                                            </a>
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            <a target="_blank" rel="noopener" href="https://github.com/XiaozhiSans/blog/">
+                                                                
+                                                                    <i class="fa fa-folder"></i>
+                                                                
+                                                                项目链接
+                                                            </a>
+                                                        </li>
+                                                    
+                                                </ul>
+                                            
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <header id="kratos-mobile-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="color-logo"><a href="/">XiaozhiSans&#39; blog</a></div>
+                    <div class="nav-toggle">
+                        <a class="kratos-nav-toggle js-kratos-nav-toggle">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="kratos-start kratos-hero-2">
+            <!-- <div class="kratos-overlay"></div> -->
+            <div class="kratos-cover kratos-cover-2 text-center">
+                <div class="desc desc2 animate-box">
+                    <a href="/">
+                        <h2>XiaozhiSans&#39; blog</h2> <br />
+                        <span>(｡ì _ í｡)</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="kratos-blog-post">
+            <div class="container">
+                <div id="main" class="row">
+                    
+
+        
+
+            <section class="col-md-8">
+
+        
+
+            <article itemscope itemtype="https://schema.org/Article">
+    
+    <link itemprop="mainEntityOfPage" href="https://xiaozhisans.github.io/2024/04/30/%E8%A7%A3%E5%86%B3%E5%B1%80%E5%9F%9F%E7%BD%91%E6%88%91%E7%9A%84%E5%B0%8F%E7%94%B5%E8%A7%86%E5%AF%BC%E8%87%B4%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86%E5%99%A8%E4%B8%8D%E6%96%AD%E5%88%B7%E6%96%B0/">
+    <div class="kratos-hentry kratos-post-inner clearfix">
+        <header class="kratos-entry-header">
+            
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">解决局域网我的小电视导致设备管理器不断刷新</h1>
+            
+            
+            <ul class="kratos-post-meta text-center">
+                <li><time datetime="2024-04-30T07:11:16.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024/04/30</time></li>
+                <li itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <i class="fa fa-user"></i> 作者 <span itemprop="name">XiaozhiSans</span>
+                </li>
+                
+                    <li>
+                        <i class="fa fa-edit"></i> 
+                        
+                        
+                            532
+                        
+                        字
+                    </li>
+                
+                
+                    <li>
+                        <i class="fa fa-eye"></i>
+                        <span id="twikoo_visitors"> </span> 次阅读
+                    </li>
+                
+            </ul>
+        </header>
+        <div class="kratos-post-content">
+            
+            <div id="expire-alert" class="alert alert-warning hidden" role="alert">
+                <div class="icon"><i class="fa fa-warning"></i></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1723210646531"></time> 前，其中的内容可能需要更新。</p></div>
+            </div>
+            
+            
+            
+            <hr />
+            <div itemprop="articleBody"><h4 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h4><p>今天打开设备管理器时发现一个叫做<code>我的小电视</code>的<em>软件设备</em>在<strong>不断刷新设备管理器</strong></p>
+<span id="more"></span>
+
+<hr>
+<h4 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h4><p>它这么不断刷新肯定会影响我的电脑性能啊,于是开始分析它这么做的原因:</p>
+<blockquote>
+<p>从名字可以得出它是局域网内的<em>智能电视设备上的app</em></p>
+<p>既然是电视上的app那么就好说了:</p>
+<p><strong>一般电视app都会有投屏功能</strong>,而这个功能呢又会向局域网内<strong>不断发送数据包</strong></p>
+<p>以检测局域网内的其他设备是否支持投屏.</p>
+<p>🥚是,windows它不知道啊,它会傻傻的<strong>不断接收这些数据包并作为软件设备安装</strong></p>
+</blockquote>
+<hr>
+<h4 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h4><p>既然知道了问题的原因,那么就好解决了</p>
+<p>网上的解决方案:</p>
+<blockquote><ol>
+<li><p>防火墙&#x2F;安全软件屏蔽局域网电视ip</p>
+</li>
+<li><p>禁用network connected devices auto setup服务</p>
+</li>
+<li><p>关闭网络发现</p>
+</li>
+</ol>
+<footer><strong>来源于网络</strong></footer></blockquote>
+
+<p><em>可以试试,也可以直接用我的解决方案</em></p>
+<p><del>因为我很懒所以</del>我并没有使用上述方案,而是使用了一个简单粗暴的方案:</p>
+<blockquote>
+<p>按下 <i class="fa fa-windows"></i>+I 键打开设置</p>
+<p>​	点击设备,在其他设备里找到并点击<code>我的小电视</code>,删除即可</p>
+<p>​	<img src="delDevices.png" alt="删除设备" style="zoom:75%;" /></p>
+<p><em>因为我已经删掉了就随便用了个设备做例子.</em><br><em>当然你也可以删掉没用的设备,不过乱删出了问题我可不负责 (￣_,￣ )</em></p>
+</blockquote>
+<p>现在打开设备管理器,发现<code>我的小电视</code>已经消失,同时设备管理器不再不断刷新.问题解决.</p>
+<img src="devicesMgr.png" alt="设备管理器" style="zoom:75%;" /></div>
+        </div>
+        
+            <div class="kratos-copyright text-center clearfix">
+                <h5 itemprop="copyrightNotice">本作品采用 <a rel="license nofollow" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a> 进行许可</h5>
+            </div>
+        
+        <footer class="kratos-entry-footer clearfix">
+            
+                <div class="post-like-donate text-center clearfix" id="post-like-donate">
+                
+                
+                    <a class="share" href="javascript:;"><i class="fa fa-share-alt"></i> 分享</a>
+                    <div class="share-wrap" style="display: none;">
+    <div class="share-group">
+        <a href="javascript:;" class="share-plain qq" onclick="share('qq');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-qq"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain qzone" onclick="share('qzone');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-star"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weixin pop style-plain" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weixin"></i>
+            </div>
+            <div class="share-int">
+                <div class="qrcode" id="wechat-qr"></div>
+                <p>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</p>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weibo" onclick="share('weibo');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weibo"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain facebook style-plain" onclick="share('facebook');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-facebook"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain twitter style-plain" onclick="share('twitter');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-twitter"></i>
+            </div>
+        </a>
+    </div>
+    <script type="text/javascript">
+        $(()=>{
+            new QRCode("wechat-qr", {
+                text: "https://xiaozhisans.github.io/2024/04/30/%E8%A7%A3%E5%86%B3%E5%B1%80%E5%9F%9F%E7%BD%91%E6%88%91%E7%9A%84%E5%B0%8F%E7%94%B5%E8%A7%86%E5%AF%BC%E8%87%B4%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86%E5%99%A8%E4%B8%8D%E6%96%AD%E5%88%B7%E6%96%B0/",
+                width: 150,
+                height: 150,
+                correctLevel : QRCode.CorrectLevel.H
+            });
+        });
+        function share(dest) {
+            const qqBase        = "https://connect.qq.com/widget/shareqq/index.html?";
+            const weiboBase     = "https://service.weibo.com/share/share.php?";
+            const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
+            const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
+            const twitterBase   = "https://twitter.com/intent/tweet?";
+            const hostUrl       = "https://xiaozhisans.github.io/2024/04/30/%E8%A7%A3%E5%86%B3%E5%B1%80%E5%9F%9F%E7%BD%91%E6%88%91%E7%9A%84%E5%B0%8F%E7%94%B5%E8%A7%86%E5%AF%BC%E8%87%B4%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86%E5%99%A8%E4%B8%8D%E6%96%AD%E5%88%B7%E6%96%B0/";
+            const title         = "「解决局域网我的小电视导致设备管理器不断刷新」";
+            const excerpt       = `起因今天打开设备管理器时发现一个叫做我的小电视的软件设备在不断刷新设备管理器`;
+            let _URL;
+            switch (dest) {
+                case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
+                case "weibo"    : _URL = weiboBase+"url="+hostUrl+"&title="+title+excerpt;                                 break;
+                case "qzone"    : _URL = qzoneBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";  break;
+                case "facebook" : _URL = facebookBase+"u="+hostUrl;                                                        break;
+                case "twitter"  : _URL = twitterBase+"text="+title+excerpt+"&url="+hostUrl;                                break;
+            }
+            window.open(_URL);
+        };
+    </script>
+</div>
+                
+                </div>
+            
+            <div class="footer-tag clearfix">
+                <div class="pull-left">
+                <i class="fa fa-tags"></i>
+                    <a class="tag-none-link" href="/tags/%E5%B1%80%E5%9F%9F%E7%BD%91%E8%AE%BE%E5%A4%87/" rel="tag">局域网设备</a>, <a class="tag-none-link" href="/tags/%E6%88%91%E7%9A%84%E5%B0%8F%E7%94%B5%E8%A7%86/" rel="tag">我的小电视</a>, <a class="tag-none-link" href="/tags/%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86%E5%99%A8/" rel="tag">设备管理器</a>
+                </div>
+                <div class="pull-date">
+                    <time datetime="2024-08-09T13:37:26.531Z" itemprop="dateModified">最后编辑：2024/08/09</time>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    
+        <div class="post-comments lazy-load bg-image">
+    <div id="tcomment"></div>
+</div>
+<script>
+    var load_comm = () => {
+        const init = () => {
+            twikoo.init({ envId: 'https://xiaozhisans-blog.hf.space', el: '#tcomment' });
+        }
+        if (typeof twikoo === 'undefined') {
+            const src = '/vendors/twikoo@1.6.32/dist/twikoo.all.min.js';
+            $.getScript(src, init);
+        } else {
+            init();
+        }
+    };
+</script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://twikoo.js.org/">comments powered by Twikoo.</a></noscript>
+    
+</article>
+
+        
+
+            </section>
+
+        
+
+                
+            
+
+<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    
+    
+                <aside id="krw-about" class="widget widget-kratos-about clearfix">
+    <div class="photo-background"></div>
+    <div class="photo-wrapper clearfix">
+        <div class="photo-wrapper-tip text-center">
+            <img class="about-photo" src="https://q.qlogo.cn/headimg_dl?dst_uin=3276839942&amp;spec=640" loading="lazy" decoding="auto" />
+        </div>
+    </div>
+    <div class="textwidget">
+        <p class="text-center">(￣﹃￣) 不能熬夜</p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                1
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分类
+            </span>
+            <span class="count">
+                1
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                标签
+            </span>
+            <span class="count">
+                3
+            </span>
+        </a>
+    </div>
+</aside>
+            
+                    <div class="sticky-area">
+                
+                
+  <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
+    <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9B%B8%E5%85%B3/">Windows操作系统相关</a><span class="category-list-count">1</span></li></ul>
+  </aside>
+
+
+            
+                
+  <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
+    <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
+      <div class="tag-clouds">
+        <a href="/tags/%E5%B1%80%E5%9F%9F%E7%BD%91%E8%AE%BE%E5%A4%87/" style="font-size: 0.6em;">局域网设备</a> <a href="/tags/%E6%88%91%E7%9A%84%E5%B0%8F%E7%94%B5%E8%A7%86/" style="font-size: 0.6em;">我的小电视</a> <a href="/tags/%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86%E5%99%A8/" style="font-size: 0.6em;">设备管理器</a>
+      </div>
+  </aside>
+
+            
+                
+  <aside id="krw-posts" class="widget widget-kratos-posts">
+  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
+  <div class="tab-content">
+      <ul class="list-group">
+        
+        
+          
+          
+            <a class="list-group-item" href="/2024/04/30/%E8%A7%A3%E5%86%B3%E5%B1%80%E5%9F%9F%E7%BD%91%E6%88%91%E7%9A%84%E5%B0%8F%E7%94%B5%E8%A7%86%E5%AF%BC%E8%87%B4%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86%E5%99%A8%E4%B8%8D%E6%96%AD%E5%88%B7%E6%96%B0/"><i class="fa  fa-book"></i> 解决局域网我的小电视导致设备管理器不断刷新</a>
+            
+          
+        
+      </ul>
+  </div>
+  </aside>
+
+            
+    </div>
+</section>
+        
+        </div>
+    </div>
+</div>
+<footer>
+    <div id="footer"  class="ap-lrc"  >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 footer-list text-center">
+                    <ul class="kratos-social-icons">
+                        <!-- Keep for compatibility -->
+                        
+                        <li><a href="mailto:xiaozhisans@qq.com"><i class="fa fa-envelope"></i></a></li>
+                        
+                        
+                        
+                        
+                        
+                        <li><a target="_blank" rel="nofollow" href="https://github.com/XiaozhiSans"><i class="fa fa-github"></i></a></li>
+                        
+                        <!-- New links -->
+                        
+                    </ul>
+                    <ul class="kratos-copyright">
+                        <div>
+                            <li>&copy; 2024 XiaozhiSans' blog 版权所有.</li>
+                            <li>本站已存活：<span id="span_dt">Loading...</span></li>
+                        </div>
+                        <div>
+                            <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
+                            <li>Site built with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by XiaozhiSans.</li>
+                        </div>
+                        <div>
+                            <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
+                            <li>Hosted on <a href="https://pages.github.com" target="_blank">Github Pages</a></li>
+                        </div>
+                        <div>
+                            <li><a href="https://beian.miit.gov.cn" rel="external nofollow" target="_blank"><a href="https://icp.gov.moe/?keyword=20241144" target="_blank">萌ICP备20241144号</a></a></li>
+                            
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="kr-tool text-center">
+            <div class="tool">
+                
+                    <div class="box search-box">
+                        <a href="/search/">
+                            <span class="fa fa-search"></span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="box theme-box" id="darkmode-switch">
+                        <span class="fa fa-adjust"></span>
+                    </div>
+                
+                
+                
+                    <div class="box group-box">
+                        <a href="https://qm.qq.com/q/aKbPtcPa8w" target="_blank" rel="nofollow">
+                            <span class="fa fa-users"></span>
+                        </a>
+                    </div>
+                
+            </div>
+            <div class="box gotop-box">
+                <span class="fa fa-chevron-up"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+
+        <script defer src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
+<script>
+    if (!window.kr) {
+        window.kr = {};
+    }
+    window.kr.notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));
+    window.kr.siteRoot = "/";
+</script>
+
+
+    <script async src="/js/candy.min.js"></script>
+
+
+
+    <script defer src="/vendors/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    
+    <script defer src="/vendors/meting@2.0.1/dist/Meting.min.js"></script>
+    <meting-js
+        server="netease"
+        type="playlist"
+        id="3204190542"
+        order="random"
+        fixed="true"
+    >
+    </meting-js>
+
+
+
+    <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script defer src="/js/kratosr.min.js"></script>
+<script defer src="/js/pjax.min.js"></script>
+
+
+
+<!-- Extra support for third-party plguins  -->
+
+
+    </body>
+</html>
